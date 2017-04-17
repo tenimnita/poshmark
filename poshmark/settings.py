@@ -8,6 +8,7 @@
 #     http://doc.scrapy.org/en/latest/topics/settings.html
 #     http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
 #     http://scrapy.readthedocs.org/en/latest/topics/spider-middleware.html
+import datetime
 
 BOT_NAME = 'poshmark'
 
@@ -90,3 +91,4 @@ SCHEDULER_MEMORY_QUEUE = 'scrapy.squeues.FifoMemoryQueue'
 
 
 LOG_LEVEL = 'INFO'
+LOG_FILE = 'log/' + datetime.datetime.now().strftime('%Y-%m-%d-%H-%M') + '.log'

@@ -1,0 +1,267 @@
+2017-04-17 12:36:56 [scrapy] INFO: Scrapy 1.1.0 started (bot: poshmark)
+2017-04-17 12:36:56 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'poshmark.spiders', 'LOG_LEVEL': 'INFO', 'CONCURRENT_REQUESTS_PER_DOMAIN': 2, 'SPIDER_MODULES': ['poshmark.spiders'], 'BOT_NAME': 'poshmark', 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36', 'DEPTH_PRIORITY': 1, 'SCHEDULER_MEMORY_QUEUE': 'scrapy.squeues.FifoMemoryQueue', 'LOG_FILE': 'log/2017-04-17-12-36.log', 'SCHEDULER_DISK_QUEUE': 'scrapy.squeues.PickleFifoDiskQueue', 'DOWNLOAD_DELAY': 0.5}
+2017-04-17 12:36:57 [scrapy] INFO: Enabled extensions:
+['scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2017-04-17 12:36:57 [scrapy] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.chunked.ChunkedTransferMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-04-17 12:36:57 [scrapy] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-04-17 12:36:57 [scrapy] INFO: Enabled item pipelines:
+['poshmark.pipelines.DumpPipeline']
+2017-04-17 12:36:57 [scrapy] INFO: Spider opened
+2017-04-17 12:36:57 [scrapy] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-04-17 12:36:58 [poshmark] INFO: parse list: https://poshmark.com/category/Women-Makeup-Foundation?availability=sold_out
+2017-04-17 12:36:59 [poshmark] INFO: parse list: https://poshmark.com/category/Women-Makeup-Eyeshadow?availability=sold_out
+2017-04-17 12:36:59 [poshmark] INFO: parse list: https://poshmark.com/category/Women-Makeup-Concealer?availability=sold_out
+2017-04-17 12:37:00 [poshmark] INFO: parse list: https://poshmark.com/category/Women-Makeup-Lipstick?availability=sold_out
+2017-04-17 12:37:00 [poshmark] INFO: parse list: https://poshmark.com/category/Women-Makeup-Face_Powder?availability=sold_out
+2017-04-17 12:37:01 [poshmark] INFO: parse list: https://poshmark.com/category/Women-Makeup-Luminizer?availability=sold_out
+2017-04-17 12:37:01 [poshmark] INFO: parse list: https://poshmark.com/category/Women-Makeup-Face_Primer?availability=sold_out
+2017-04-17 12:37:02 [poshmark] INFO: parse list: https://poshmark.com/category/Women-Makeup-Eyeliner?availability=sold_out
+2017-04-17 12:37:03 [poshmark] INFO: parse list: https://poshmark.com/category/Women-Makeup-Mascara?availability=sold_out
+2017-04-17 12:37:03 [poshmark] INFO: parse list: https://poshmark.com/category/Women-Makeup-Lip_Balm_&_Gloss?availability=sold_out
+2017-04-17 12:37:04 [poshmark] INFO: parse list: https://poshmark.com/category/Women-Makeup-Lip_Liner?availability=sold_out
+2017-04-17 12:37:04 [poshmark] INFO: parse list: https://poshmark.com/category/Women-Makeup-Eyebrow_Filler?availability=sold_out
+2017-04-17 12:37:05 [poshmark] INFO: parse list: https://poshmark.com/category/Women-Makeup-Brushes_&_Tools?availability=sold_out
+2017-04-17 12:37:05 [poshmark] INFO: parse list: https://poshmark.com/category/Women-Makeup-Eye_Primer?availability=sold_out
+2017-04-17 12:37:06 [poshmark] INFO: parse list: https://poshmark.com/category/Women-Makeup-Blush?availability=sold_out
+2017-04-17 12:37:06 [poshmark] INFO: parse list: https://poshmark.com/category/Women-Makeup-Bronzer?availability=sold_out
+2017-04-17 12:37:07 [poshmark] INFO: parse list: https://poshmark.com/category/Women-Makeup-False_Eyelashes?availability=sold_out
+2017-04-17 12:37:07 [poshmark] INFO: parse item: https://poshmark.com/listing/Bare-Minerals-FoundationBundle-SAVE-58f00edaf0137d83630117c9
+2017-04-17 12:37:07 [poshmark] INFO: saved
+2017-04-17 12:37:07 [poshmark] INFO: parse item: https://poshmark.com/listing/Chanel-Perfection-Lumiere-Foundation-20-Beige-58f2d165f0137d2b4202e591
+2017-04-17 12:37:07 [poshmark] INFO: saved
+2017-04-17 12:37:08 [poshmark] INFO: parse item: https://poshmark.com/listing/MAC-studio-sculpt-foundation-58f418af13302a733a0297a6
+2017-04-17 12:37:08 [poshmark] INFO: saved
+2017-04-17 12:37:08 [poshmark] INFO: parse item: https://poshmark.com/listing/No7-BB-cream-tinted-58bf93d95c12f83e5401a7cf
+2017-04-17 12:37:08 [poshmark] INFO: saved
+2017-04-17 12:37:09 [poshmark] INFO: parse list: https://poshmark.com/category/Women-Makeup-Foundation?availability=sold_out&max_id=2
+2017-04-17 12:37:10 [poshmark] INFO: parse item: https://poshmark.com/listing/Naked-palette-58e7ede3c6c79503e3003eb2
+2017-04-17 12:37:10 [poshmark] INFO: saved
+2017-04-17 12:37:10 [poshmark] INFO: parse item: https://poshmark.com/listing/Brand-New-Smashbox-Cover-shot-eyeshadow-Palette-58c4f77ef739bc580702974b
+2017-04-17 12:37:11 [poshmark] INFO: saved
+2017-04-17 12:37:11 [poshmark] INFO: parse item: https://poshmark.com/listing/TARTE-IN-BLOOM-clay-palette-58f42cdb9c6fcf8fce0f6290
+2017-04-17 12:37:11 [poshmark] INFO: saved
+2017-04-17 12:37:12 [poshmark] INFO: parse item: https://poshmark.com/listing/Clinique-8-pan-eyeshadow-palette-58ca45b7291a35d708021d01
+2017-04-17 12:37:12 [poshmark] INFO: saved
+2017-04-17 12:37:12 [poshmark] INFO: parse item: https://poshmark.com/listing/Gently-used-Naked-3-Palette-authentic-58f4173fb4188e5dfd037fa0
+2017-04-17 12:37:12 [poshmark] INFO: saved
+2017-04-17 12:37:13 [poshmark] INFO: parse item: https://poshmark.com/listing/TARTELETTE-PALETTE-58f4218f7f0a05076302beb8
+2017-04-17 12:37:13 [poshmark] INFO: saved
+2017-04-17 12:37:14 [poshmark] INFO: parse item: https://poshmark.com/listing/New-Lancme-Color-Design-Demo-58e0715ceaf03005df063a60
+2017-04-17 12:37:14 [poshmark] INFO: saved
+2017-04-17 12:37:14 [poshmark] INFO: parse item: https://poshmark.com/listing/Eye-shadow-pallette-58f41e04291a35074b0ef66b
+2017-04-17 12:37:14 [poshmark] INFO: saved
+2017-04-17 12:37:15 [poshmark] INFO: parse item: https://poshmark.com/listing/Dior-Eyeshadow-hard-to-find-Beautiful-58e0eb99620ff7d25d075ce8
+2017-04-17 12:37:15 [poshmark] INFO: saved
+2017-04-17 12:37:15 [poshmark] INFO: parse item: https://poshmark.com/listing/16-colors-eyeshadow-palette-58e94ac92de512343f000ba5
+2017-04-17 12:37:15 [poshmark] INFO: saved
+2017-04-17 12:37:16 [poshmark] INFO: parse item: https://poshmark.com/listing/16-colors-eyeshadow-palette-58e94a02fbf6f93d09000cd9
+2017-04-17 12:37:16 [poshmark] INFO: saved
+2017-04-17 12:37:16 [poshmark] INFO: parse item: https://poshmark.com/listing/Tarte-Eye-love-You-Eyeshadow-Palette-58f2a21d620ff7a36209e3b7
+2017-04-17 12:37:16 [poshmark] INFO: saved
+2017-04-17 12:37:17 [poshmark] INFO: parse item: https://poshmark.com/listing/Urban-Decay-Naked-Palette-58f2dfe6620ff77d3e0afce7
+2017-04-17 12:37:17 [poshmark] INFO: saved
+2017-04-17 12:37:17 [poshmark] INFO: parse item: https://poshmark.com/listing/FLASH-SALE-Lorac-Pro-mini-palette-58e2c7304127d0c5ca0dc201
+2017-04-17 12:37:17 [poshmark] INFO: saved
+2017-04-17 12:37:18 [poshmark] INFO: parse item: https://poshmark.com/listing/Dior-eyeshadow-quad-58ec53a1620ff73d9804f873
+2017-04-17 12:37:18 [poshmark] INFO: saved
+2017-04-17 12:37:19 [poshmark] INFO: parse item: https://poshmark.com/listing/Stila-Palette-58f2fe63ea3f36515c0b7c84
+2017-04-17 12:37:19 [poshmark] INFO: saved
+2017-04-17 12:37:20 [poshmark] INFO: parse item: https://poshmark.com/listing/Urban-Decay-Naked-Palette-58d5d2d6f092826aa5039170
+2017-04-17 12:37:20 [poshmark] INFO: saved
+2017-04-17 12:37:20 [poshmark] INFO: parse list: https://poshmark.com/category/Women-Makeup-Eyeshadow?availability=sold_out&max_id=2
+2017-04-17 12:37:21 [poshmark] INFO: parse list: https://poshmark.com/category/Women-Makeup-Concealer?availability=sold_out&max_id=2
+2017-04-17 12:37:22 [poshmark] INFO: parse item: https://poshmark.com/listing/Bundle-of-2-tarte-lipsticks-58f42b7bbf6df520ae0309c7
+2017-04-17 12:37:22 [poshmark] INFO: saved
+2017-04-17 12:37:22 [poshmark] INFO: parse item: https://poshmark.com/listing/KIDMANS-KISS-58884f6c522b452b0a022b04
+2017-04-17 12:37:22 [poshmark] INFO: saved
+2017-04-17 12:37:23 [poshmark] INFO: parse item: https://poshmark.com/listing/Tarte-Splash-Hydrating-lipsticks-58d5bf12f739bc6ea5046dea
+2017-04-17 12:37:23 [poshmark] INFO: saved
+2017-04-17 12:37:23 [poshmark] INFO: parse item: https://poshmark.com/listing/MAC-Snob-Lipstick-pastel-pink-58ea932ef739bc0da7043077
+2017-04-17 12:37:23 [poshmark] INFO: saved
+2017-04-17 12:37:24 [poshmark] INFO: parse item: https://poshmark.com/listing/LIMITED-EDITION-KvD-lippie-58e967986a5830a73f00786b
+2017-04-17 12:37:24 [poshmark] INFO: saved
+2017-04-17 12:37:25 [poshmark] INFO: parse item: https://poshmark.com/listing/Smashbox-Holiday-Lip-Sets-58f414994225beb8b202895a
+2017-04-17 12:37:25 [poshmark] INFO: saved
+2017-04-17 12:37:25 [poshmark] INFO: parse item: https://poshmark.com/listing/Kat-Von-D-Everlasting-Liquid-Lipstick-in-Noble-58aa20fbf739bc304c1683a3
+2017-04-17 12:37:25 [poshmark] INFO: saved
+2017-04-17 12:37:26 [poshmark] INFO: parse list: https://poshmark.com/category/Women-Makeup-Lipstick?availability=sold_out&max_id=2
+2017-04-17 12:37:26 [poshmark] INFO: parse item: https://poshmark.com/listing/SEPHORA-POWDER-FOUNDATION-58efd74c4127d0db38006397
+2017-04-17 12:37:26 [poshmark] INFO: saved
+2017-04-17 12:37:27 [poshmark] INFO: parse item: https://poshmark.com/listing/Kat-von-d-lock-it-setting-powder-58f182fdbcd4a700a102b29e
+2017-04-17 12:37:27 [poshmark] INFO: saved
+2017-04-17 12:37:27 [poshmark] INFO: parse item: https://poshmark.com/listing/Laura-Mercier-Shimmer-bundle-58ca7f37c6c7952274027d64
+2017-04-17 12:37:27 [poshmark] INFO: saved
+2017-04-17 12:37:28 [poshmark] INFO: parse item: https://poshmark.com/listing/Pur-Cosmetics-Stay-Matte-Collection-58f019732fd0b76276014906
+2017-04-17 12:37:28 [poshmark] INFO: saved
+2017-04-17 12:37:29 [poshmark] INFO: parse item: https://poshmark.com/listing/MAC-Transparent-Finishing-PowderPressed-58e859674e8d17af2201eef9
+2017-04-17 12:37:29 [poshmark] INFO: saved
+2017-04-17 12:37:30 [poshmark] INFO: parse list: https://poshmark.com/category/Women-Makeup-Face_Powder?availability=sold_out&max_id=2
+2017-04-17 12:37:30 [poshmark] INFO: parse item: https://poshmark.com/listing/Stila-Shape-Shade-Custom-Contour-Duo-LIGHT-58881fb2f0928212c9023744
+2017-04-17 12:37:30 [poshmark] INFO: saved
+2017-04-17 12:37:30 [poshmark] INFO: parse item: https://poshmark.com/listing/Too-Faced-Love-Light-Highlighter-58f41d634e8d170e240edb47
+2017-04-17 12:37:30 [poshmark] INFO: saved
+2017-04-17 12:37:31 [poshmark] INFO: parse item: https://poshmark.com/listing/Anastasia-Beverly-Hills-Glow-kit-moonchild-58f42813520e3b6d0323e111
+2017-04-17 12:37:31 [poshmark] INFO: saved
+2017-04-17 12:37:31 [poshmark] INFO: parse item: https://poshmark.com/listing/Anastasia-Beverly-Hills-Glow-kit-SWEET-58f4326fc8513cb0b4c3c25e
+2017-04-17 12:37:31 [poshmark] INFO: saved
+2017-04-17 12:37:32 [poshmark] INFO: parse list: https://poshmark.com/category/Women-Makeup-Luminizer?availability=sold_out&max_id=2
+2017-04-17 12:37:33 [poshmark] INFO: parse item: https://poshmark.com/listing/KIEHLS-Pure-Vitality-Skin-Renewing-Cream-58d32cad99086a2da40278c1
+2017-04-17 12:37:33 [poshmark] INFO: saved
+2017-04-17 12:37:34 [poshmark] INFO: parse list: https://poshmark.com/category/Women-Makeup-Face_Primer?availability=sold_out&max_id=2
+2017-04-17 12:37:34 [poshmark] INFO: parse item: https://poshmark.com/listing/LAST-1-STILA-Blue-Sapphire-eyeliner-NEW-in-box-5897507af09282835200bdb2
+2017-04-17 12:37:34 [poshmark] INFO: saved
+2017-04-17 12:37:35 [poshmark] INFO: parse list: https://poshmark.com/category/Women-Makeup-Eyeliner?availability=sold_out&max_id=2
+2017-04-17 12:37:35 [poshmark] INFO: parse item: https://poshmark.com/listing/Too-Faced-Better-Than-Sex-Mascara-Travel-Size-58e9bc5e2ba50a2b5901d794
+2017-04-17 12:37:35 [poshmark] INFO: saved
+2017-04-17 12:37:36 [poshmark] INFO: parse item: https://poshmark.com/listing/Be-A-Bombshell-Lash-Out-Mascara-57560c44713fde82e90033ca
+2017-04-17 12:37:36 [poshmark] INFO: saved
+2017-04-17 12:37:37 [poshmark] INFO: parse list: https://poshmark.com/category/Women-Makeup-Mascara?availability=sold_out&max_id=2
+2017-04-17 12:37:37 [poshmark] INFO: parse item: https://poshmark.com/listing/Lipsense-first-love-used-58f41fa0ea3f36422e0f0105
+2017-04-17 12:37:37 [poshmark] INFO: saved
+2017-04-17 12:37:38 [poshmark] INFO: parse item: https://poshmark.com/listing/NWT-Too-faced-Lip-Injection-Bundle-585c16d7f739bc0347061c22
+2017-04-17 12:37:38 [poshmark] INFO: saved
+2017-04-17 12:37:38 [poshmark] INFO: parse item: https://poshmark.com/listing/BAREMINERALS-Set-58f2c10d4e95a3e9fd0a5e9c
+2017-04-17 12:37:38 [poshmark] INFO: saved
+2017-04-17 12:37:39 [poshmark] INFO: parse list: https://poshmark.com/category/Women-Makeup-Lip_Balm_&_Gloss?availability=sold_out&max_id=2
+2017-04-17 12:37:40 [poshmark] INFO: parse list: https://poshmark.com/category/Women-Makeup-Lip_Liner?availability=sold_out&max_id=2
+2017-04-17 12:37:41 [poshmark] INFO: parse list: https://poshmark.com/category/Women-Makeup-Eyebrow_Filler?availability=sold_out&max_id=2
+2017-04-17 12:37:41 [poshmark] INFO: parse item: https://poshmark.com/listing/Hourglass-brush-56aaee76d14d7b42cf006c37
+2017-04-17 12:37:41 [poshmark] INFO: saved
+2017-04-17 12:37:42 [poshmark] INFO: parse item: https://poshmark.com/listing/Artis-Brush-Oval-4-58ec4f37522b45385004c451
+2017-04-17 12:37:42 [poshmark] INFO: saved
+2017-04-17 12:37:42 [poshmark] INFO: parse item: https://poshmark.com/listing/Kat-Von-D-shade-and-light-double-ended-brush-58ecc323c28456180b060c10
+2017-04-17 12:37:42 [poshmark] INFO: saved
+2017-04-17 12:37:43 [poshmark] INFO: parse item: https://poshmark.com/listing/It-cosmetics-heavenly-luxe-eyeshadow-brush-58dd8f377fab3a0abe003ad7
+2017-04-17 12:37:43 [poshmark] INFO: saved
+2017-04-17 12:37:44 [poshmark] INFO: parse item: https://poshmark.com/listing/Morphe-Brushes-Bundle-58a081d9713fde850d0062d4
+2017-04-17 12:37:44 [poshmark] INFO: saved
+2017-04-17 12:37:44 [poshmark] INFO: parse item: https://poshmark.com/listing/Kat-Von-D-brush-bundle-58ccabaa522b45289a055ddf
+2017-04-17 12:37:44 [poshmark] INFO: saved
+2017-04-17 12:37:44 [poshmark] INFO: parse item: https://poshmark.com/listing/Kat-Von-D-LockIt-Edge-Foundation-Brush-10-58d3fba38f0fc4728b073fd5
+2017-04-17 12:37:44 [poshmark] INFO: saved
+2017-04-17 12:37:45 [poshmark] INFO: parse item: https://poshmark.com/listing/CHANEL-EARRINGS-58f3dccc4e95a3f5b40dff77
+2017-04-17 12:37:45 [poshmark] INFO: saved
+2017-04-17 12:37:46 [poshmark] INFO: parse list: https://poshmark.com/category/Women-Makeup-Brushes_&_Tools?availability=sold_out&max_id=2
+2017-04-17 12:37:47 [poshmark] INFO: parse item: https://poshmark.com/listing/NARS-Blush-Luster-Peach-58f1326156b2d62a9201890c
+2017-04-17 12:37:47 [poshmark] INFO: saved
+2017-04-17 12:37:47 [poshmark] INFO: parse list: https://poshmark.com/category/Women-Makeup-Eye_Primer?availability=sold_out&max_id=2
+2017-04-17 12:37:47 [poshmark] INFO: parse item: https://poshmark.com/listing/Benefit-Hervana-blush-588cd44c4225bebedf00bd06
+2017-04-17 12:37:47 [poshmark] INFO: saved
+2017-04-17 12:37:48 [poshmark] INFO: parse item: https://poshmark.com/listing/NARS-Cactus-Flower-Creme-Blush-58abc51af739bc89e71d822d
+2017-04-17 12:37:48 [poshmark] INFO: saved
+2017-04-17 12:37:49 [poshmark] INFO: parse item: https://poshmark.com/listing/FLASH-SALE-Benefit-Coralista-blush-58e2c3c4291a356e750dc4fb
+2017-04-17 12:37:49 [poshmark] INFO: saved
+2017-04-17 12:37:49 [poshmark] INFO: parse item: https://poshmark.com/listing/Ofra-Blush-58ea2e83a88e7dd7b00017cf
+2017-04-17 12:37:49 [poshmark] INFO: saved
+2017-04-17 12:37:50 [poshmark] INFO: parse list: https://poshmark.com/category/Women-Makeup-Blush?availability=sold_out&max_id=2
+2017-04-17 12:37:50 [poshmark] INFO: parse item: https://poshmark.com/listing/Becca-shimmering-skin-perfector-pressed-opal-58f2bc5b6802786592029038
+2017-04-17 12:37:50 [poshmark] INFO: saved
+2017-04-17 12:37:51 [poshmark] INFO: parse list: https://poshmark.com/category/Women-Makeup-Bronzer?availability=sold_out&max_id=2
+2017-04-17 12:37:52 [poshmark] INFO: parse list: https://poshmark.com/category/Women-Makeup-False_Eyelashes?availability=sold_out&max_id=2
+2017-04-17 12:37:52 [poshmark] INFO: parse item: https://poshmark.com/listing/Kat-Von-D-lock-it-foundation-For-sale-cheap-58f0ed2ffbf6f9d184008a85
+2017-04-17 12:37:52 [poshmark] INFO: saved
+2017-04-17 12:37:53 [poshmark] INFO: parse list: https://poshmark.com/category/Women-Makeup-Foundation?availability=sold_out&max_id=3
+2017-04-17 12:37:53 [poshmark] INFO: parse item: https://poshmark.com/listing/Bundle-MUFE-EL-palettes-Colorpop-highlighter-58f3dcd05c12f8110301acbe
+2017-04-17 12:37:53 [poshmark] INFO: saved
+2017-04-17 12:37:54 [poshmark] INFO: parse item: https://poshmark.com/listing/Kat-Von-D-Metal-Matte-Palette-Limited-Edition-58f3dbf05c12f8a56101a9dc
+2017-04-17 12:37:54 [poshmark] INFO: saved
+2017-04-17 12:37:54 [poshmark] INFO: parse item: https://poshmark.com/listing/Too-faced-matte-eye-pallette-579bc1994e8d17cf9c00d963
+2017-04-17 12:37:54 [poshmark] INFO: saved
+2017-04-17 12:37:55 [poshmark] INFO: parse item: https://poshmark.com/listing/Charlotte-Tilbury-Color-Chameleon-Eye-Pencil-58f393d54e95a388d80ce3f8
+2017-04-17 12:37:55 [poshmark] INFO: saved
+2017-04-17 12:37:56 [poshmark] INFO: parse item: https://poshmark.com/listing/NARSissist-Eyeshadow-Pallete-58f392f95a49d05cbb0cdae4
+2017-04-17 12:37:56 [poshmark] INFO: saved
+2017-04-17 12:37:57 [poshmark] INFO: parse list: https://poshmark.com/category/Women-Makeup-Eyeshadow?availability=sold_out&max_id=3
+2017-04-17 12:37:57 [scrapy] INFO: Crawled 100 pages (at 100 pages/min), scraped 64 items (at 64 items/min)
+2017-04-17 12:37:57 [poshmark] INFO: parse list: https://poshmark.com/category/Women-Makeup-Concealer?availability=sold_out&max_id=3
+2017-04-17 12:37:57 [poshmark] INFO: parse item: https://poshmark.com/listing/NIB-KAT-VON-D-Liquid-Lipstick-Double-Dare-58f2ac294127d098df09f279
+2017-04-17 12:37:57 [poshmark] INFO: saved
+2017-04-17 12:37:58 [poshmark] INFO: parse list: https://poshmark.com/category/Women-Makeup-Lipstick?availability=sold_out&max_id=3
+2017-04-17 12:37:59 [poshmark] INFO: parse list: https://poshmark.com/category/Women-Makeup-Face_Powder?availability=sold_out&max_id=3
+2017-04-17 12:37:59 [poshmark] INFO: parse item: https://poshmark.com/listing/URBAN-DECAY-Highlighter-58f13f4b36d594da06050243
+2017-04-17 12:37:59 [poshmark] INFO: saved
+2017-04-17 12:38:01 [poshmark] INFO: parse list: https://poshmark.com/category/Women-Makeup-Face_Primer?availability=sold_out&max_id=3
+2017-04-17 12:38:01 [poshmark] INFO: parse list: https://poshmark.com/category/Women-Makeup-Luminizer?availability=sold_out&max_id=3
+2017-04-17 12:38:01 [poshmark] INFO: parse list: https://poshmark.com/category/Women-Makeup-Eyeliner?availability=sold_out&max_id=3
+2017-04-17 12:38:02 [poshmark] INFO: parse list: https://poshmark.com/category/Women-Makeup-Mascara?availability=sold_out&max_id=3
+2017-04-17 12:38:02 [poshmark] INFO: parse item: https://poshmark.com/listing/Lipsense-Dawn-Rising-used-58f26e947f0a05003a0169c4
+2017-04-17 12:38:02 [poshmark] INFO: saved
+2017-04-17 12:38:03 [poshmark] INFO: parse list: https://poshmark.com/category/Women-Makeup-Lip_Balm_&_Gloss?availability=sold_out&max_id=3
+2017-04-17 12:38:04 [poshmark] INFO: parse list: https://poshmark.com/category/Women-Makeup-Lip_Liner?availability=sold_out&max_id=3
+2017-04-17 12:38:04 [poshmark] INFO: parse item: https://poshmark.com/listing/Anastasia-Dipbrow-Dark-Brown-58f429b3930394b4f26d2f39
+2017-04-17 12:38:04 [poshmark] INFO: saved
+2017-04-17 12:38:05 [poshmark] INFO: parse item: https://poshmark.com/listing/Anastasia-Brow-Wiz-58f429b3930394b4f26d2f45
+2017-04-17 12:38:05 [poshmark] INFO: saved
+2017-04-17 12:38:05 [poshmark] INFO: parse item: https://poshmark.com/listing/Anastasia-Brow-Definer-58f429b3930394b4f26d2f3e
+2017-04-17 12:38:05 [poshmark] INFO: saved
+2017-04-17 12:38:06 [poshmark] INFO: parse list: https://poshmark.com/category/Women-Makeup-Eyebrow_Filler?availability=sold_out&max_id=3
+2017-04-17 12:38:06 [poshmark] INFO: parse item: https://poshmark.com/listing/Chanel-4-Blush-Brush-58eef41af739bcb038015e94
+2017-04-17 12:38:06 [poshmark] INFO: saved
+2017-04-17 12:38:07 [poshmark] INFO: parse item: https://poshmark.com/listing/Morphe-brush-set-58f42bd20c2b5847fdc2d779
+2017-04-17 12:38:07 [poshmark] INFO: saved
+2017-04-17 12:38:07 [poshmark] INFO: parse list: https://poshmark.com/category/Women-Makeup-Brushes_&_Tools?availability=sold_out&max_id=3
+2017-04-17 12:38:08 [poshmark] INFO: parse list: https://poshmark.com/category/Women-Makeup-Eye_Primer?availability=sold_out&max_id=3
+2017-04-17 12:38:08 [poshmark] INFO: parse item: https://poshmark.com/listing/Tarte-Bundle-58d2e675c2845660e403f099
+2017-04-17 12:38:08 [poshmark] INFO: saved
+2017-04-17 12:38:09 [poshmark] INFO: parse list: https://poshmark.com/category/Women-Makeup-Blush?availability=sold_out&max_id=3
+2017-04-17 12:38:10 [poshmark] INFO: parse list: https://poshmark.com/category/Women-Makeup-Bronzer?availability=sold_out&max_id=3
+2017-04-17 12:38:11 [poshmark] INFO: parse list: https://poshmark.com/category/Women-Makeup-False_Eyelashes?availability=sold_out&max_id=3
+2017-04-17 12:38:12 [poshmark] INFO: parse list: https://poshmark.com/category/Women-Makeup-Foundation?availability=sold_out&max_id=4
+2017-04-17 12:38:12 [scrapy] INFO: Received SIGTERM, shutting down gracefully. Send again to force 
+2017-04-17 12:38:12 [scrapy] INFO: Closing spider (shutdown)
+2017-04-17 12:38:12 [poshmark] INFO: parse list: https://poshmark.com/category/Women-Makeup-Eyeshadow?availability=sold_out&max_id=4
+2017-04-17 12:38:13 [poshmark] INFO: parse list: https://poshmark.com/category/Women-Makeup-Concealer?availability=sold_out&max_id=4
+2017-04-17 12:38:13 [poshmark] INFO: parse item: https://poshmark.com/listing/Authentic-MAC-Matte-Lipstick-58ed86974127d074f3088fa4
+2017-04-17 12:38:13 [poshmark] INFO: saved
+2017-04-17 12:38:14 [poshmark] INFO: parse list: https://poshmark.com/category/Women-Makeup-Lipstick?availability=sold_out&max_id=4
+2017-04-17 12:38:15 [poshmark] INFO: parse list: https://poshmark.com/category/Women-Makeup-Face_Powder?availability=sold_out&max_id=4
+2017-04-17 12:38:15 [poshmark] INFO: parse item: https://poshmark.com/listing/Smashbox-Photo-Finish-Primer-NEW-AUTHENTIC-58e850edc6c79528fe01b924
+2017-04-17 12:38:15 [poshmark] INFO: saved
+2017-04-17 12:38:16 [poshmark] INFO: parse list: https://poshmark.com/category/Women-Makeup-Face_Primer?availability=sold_out&max_id=4
+2017-04-17 12:38:16 [poshmark] INFO: parse list: https://poshmark.com/category/Women-Makeup-Luminizer?availability=sold_out&max_id=4
+2017-04-17 12:38:17 [poshmark] INFO: parse list: https://poshmark.com/category/Women-Makeup-Eyeliner?availability=sold_out&max_id=4
+2017-04-17 12:38:18 [poshmark] INFO: parse list: https://poshmark.com/category/Women-Makeup-Mascara?availability=sold_out&max_id=4
+2017-04-17 12:38:19 [poshmark] INFO: parse list: https://poshmark.com/category/Women-Makeup-Lip_Balm_&_Gloss?availability=sold_out&max_id=4
+2017-04-17 12:38:19 [poshmark] INFO: parse list: https://poshmark.com/category/Women-Makeup-Lip_Liner?availability=sold_out&max_id=4
+2017-04-17 12:38:20 [poshmark] INFO: parse list: https://poshmark.com/category/Women-Makeup-Eyebrow_Filler?availability=sold_out&max_id=4
+2017-04-17 12:38:20 [poshmark] INFO: parse item: https://poshmark.com/listing/Spectrum-make-up-brushes-lot-of-12-brand-new-58e3bc4f5a49d0e787110d3a
+2017-04-17 12:38:20 [poshmark] INFO: saved
+2017-04-17 12:38:21 [poshmark] INFO: parse list: https://poshmark.com/category/Women-Makeup-Brushes_&_Tools?availability=sold_out&max_id=4
+2017-04-17 12:38:22 [poshmark] INFO: parse list: https://poshmark.com/category/Women-Makeup-Eye_Primer?availability=sold_out&max_id=4
+2017-04-17 12:38:22 [scrapy] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 151645,
+ 'downloader/request_count': 141,
+ 'downloader/request_method_count/GET': 141,
+ 'downloader/response_bytes': 3727360,
+ 'downloader/response_count': 141,
+ 'downloader/response_status_count/200': 141,
+ 'finish_reason': 'shutdown',
+ 'finish_time': datetime.datetime(2017, 4, 17, 3, 38, 22, 382027),
+ 'item_scraped_count': 76,
+ 'log_count/INFO': 226,
+ 'request_depth_max': 4,
+ 'response_received_count': 141,
+ 'scheduler/dequeued': 141,
+ 'scheduler/dequeued/memory': 141,
+ 'scheduler/enqueued': 160,
+ 'scheduler/enqueued/memory': 160,
+ 'start_time': datetime.datetime(2017, 4, 17, 3, 36, 57, 159615)}
+2017-04-17 12:38:22 [scrapy] INFO: Spider closed (shutdown)
