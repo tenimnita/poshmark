@@ -39,7 +39,7 @@ class PoshmarkSpider(scrapy.Spider):
             self.start_urls.append(category_url['url'] + '?availability=sold_out')
 
     def parse_item(self, item, response):
-        self.logger.info('parse item: {}'.format(response.url))
+        self.logger.debug('parse item: {}'.format(response.url))
         # item = PoshmarkItem()
         item['id'] = self.parse_id(response.url)
         if not item['id']:
@@ -93,6 +93,7 @@ class PoshmarkSpider(scrapy.Spider):
         url_items = response.xpath('//div[@id="tiles-con"]/div')
         if len(url_items) == 0:
             self.logger.warning('Cannot extract URL from: {}'.format(response.url))
+        has_new = False
         for url_item in url_items:
             url = url_item.xpath('.//div[@class="item-details"]//a/@href').extract_first()
             if not url:
@@ -112,8 +113,10 @@ class PoshmarkSpider(scrapy.Spider):
                 exist = my_mongo.item_collection.find_one(filter={
                     'id': id
                 })
+                # print id, exist is not None
                 if not exist:
                     # print url
+                    has_new = True
                     yield Request(url=url, callback=partial(self.parse_item, PoshmarkItem(
                         # category_link=response.url,
                         like_count=like_count,
@@ -122,10 +125,18 @@ class PoshmarkSpider(scrapy.Spider):
                         brand=brand,
                         condition=condition
                     )))
+        if not has_new:
+            self.logger.info(u'no more new items {}'.format(response.url))
+            return
         # go next page
         obj = re.match(r'(.*)&max_id=(\d+)', response.url)
         if obj:
-            next_page = obj.group(1) + '&max_id={}'.format(int(obj.group(2)) + 1)
+            max_id = int(obj.group(2))
+            if max_id == 48:
+                # reach maximum page
+                self.logger.info(u'maximum page for: {}'.format(response.url))
+                return
+            next_page = obj.group(1) + '&max_id={}'.format(max_id + 1)
             yield Request(url=next_page, callback=self.parse)
         else:
             tmp = re.match(r'(.*)availability=sold_out', response.url)

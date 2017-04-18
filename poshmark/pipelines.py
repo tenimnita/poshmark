@@ -10,5 +10,5 @@ from poshmark import my_mongo
 class DumpPipeline(object):
     def process_item(self, item, spider):
         my_mongo.item_collection.insert_one(dict(item))
-        spider.logger.info('saved')
+        spider.logger.debug('saved')
         return item
