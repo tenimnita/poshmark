@@ -36,7 +36,9 @@ class PoshmarkSpider(scrapy.Spider):
         #     self.start_urls[i] = url + '?availability=sold_out'
 
         for category_url in my_mongo.category_collection.find():
-            self.start_urls.append(category_url['url'] + '?availability=sold_out')
+            if re.match(ur'(.*)/category/Women-', category_url['url'], re.IGNORECASE):
+                self.logger.info(category_url['url'])
+                self.start_urls.append(category_url['url'] + '?availability=sold_out')
 
     def parse_item(self, item, response):
         self.logger.debug('parse item: {}'.format(response.url))
@@ -125,9 +127,9 @@ class PoshmarkSpider(scrapy.Spider):
                         brand=brand,
                         condition=condition
                     )))
-        if not has_new:
-            self.logger.info(u'no more new items {}'.format(response.url))
-            return
+        # if not has_new:
+        #     self.logger.info(u'no more new items {}'.format(response.url))
+        #     return
         # go next page
         obj = re.match(r'(.*)&max_id=(\d+)', response.url)
         if obj:
