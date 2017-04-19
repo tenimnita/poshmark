@@ -127,9 +127,9 @@ class PoshmarkSpider(scrapy.Spider):
                         brand=brand,
                         condition=condition
                     )))
-        # if not has_new:
-        #     self.logger.info(u'no more new items {}'.format(response.url))
-        #     return
+        if not has_new:
+            self.logger.info(u'no more new items {}'.format(response.url))
+            return
         # go next page
         obj = re.match(r'(.*)&max_id=(\d+)', response.url)
         if obj:
