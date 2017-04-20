@@ -41,7 +41,7 @@ class PoshmarkSpider(scrapy.Spider):
                 self.start_urls.append(category_url['url'] + '?availability=sold_out')
 
     def parse_item(self, item, response):
-        self.logger.debug('parse item: {}'.format(response.url))
+        self.logger.info('parse item: {}'.format(response.url))
         # item = PoshmarkItem()
         item['id'] = self.parse_id(response.url)
         if not item['id']:
@@ -56,7 +56,9 @@ class PoshmarkSpider(scrapy.Spider):
         item['crawled_time'] = datetime.datetime.now()
         # item['bread_crumb'] = response.xpath('//li[@itemscope="itemscope"]/a/span/text()').extract()
         item['title'] = response.xpath('//h1[@class="title"]/text()').extract_first()
-        item['price'] = response.xpath('//div[@class="price"]/text()').extract_first()
+        if item['title']:
+            item['normalized_title'] = spider.normalize_title(item['title'])
+        item['price'] = response.xpath('//div[@class="price"]/text()').extract_first().strip()
         # item['img_urls'] = response.xpath('//div[@class="carousel-inner"]//img/@src').extract()
         item['category_list'] = self.parse_category(response)
         if len(item['category_list']) > 0:
@@ -83,6 +85,16 @@ class PoshmarkSpider(scrapy.Spider):
                 categories = tag_list.xpath('.//a/text()').extract()
                 return categories
         return None
+
+    emoji_pattern = re.compile("["
+                               u"\U0001F600-\U0001F64F"  # emoticons
+                               u"\U0001F300-\U0001F5FF"  # symbols & pictographs
+                               u"\U0001F680-\U0001F6FF"  # transport & map symbols
+                               u"\U0001F1E0-\U0001F1FF"  # flags (iOS)
+                               "]+", flags=re.UNICODE)
+
+    def normalize_title(self, title):
+        return self.emoji_pattern.sub(r'', title).strip()
 
     def parse(self, response):
         self.logger.info('parse list: {}'.format(response.url))
@@ -127,9 +139,9 @@ class PoshmarkSpider(scrapy.Spider):
                         brand=brand,
                         condition=condition
                     )))
-        if not has_new:
-            self.logger.info(u'no more new items {}'.format(response.url))
-            return
+        # if not has_new:
+        #     self.logger.info(u'no more new items {}'.format(response.url))
+        #     return
         # go next page
         obj = re.match(r'(.*)&max_id=(\d+)', response.url)
         if obj:
@@ -147,3 +159,8 @@ class PoshmarkSpider(scrapy.Spider):
                 yield Request(url=next_page, callback=self.parse)
             else:
                 self.logger.info(u'not match paging site {}'.format(response.url))
+
+
+if  __name__ == '__main__':
+    spider = PoshmarkSpider()
+    print spider.normalize_title(u'This dog 😂')
