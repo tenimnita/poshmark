@@ -57,7 +57,7 @@ class PoshmarkSpider(scrapy.Spider):
         # item['bread_crumb'] = response.xpath('//li[@itemscope="itemscope"]/a/span/text()').extract()
         item['title'] = response.xpath('//h1[@class="title"]/text()').extract_first()
         if item['title']:
-            item['normalized_title'] = spider.normalize_title(item['title'])
+            item['normalized_title'] = self.normalize_title(item['title'])
         item['price'] = response.xpath('//div[@class="price"]/text()').extract_first().strip()
         # item['img_urls'] = response.xpath('//div[@class="carousel-inner"]//img/@src').extract()
         item['category_list'] = self.parse_category(response)

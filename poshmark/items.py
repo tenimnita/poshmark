@@ -20,6 +20,7 @@ class PoshmarkItem(scrapy.Item):
     url = scrapy.Field()
     # img_urls = scrapy.Field()
     title = scrapy.Field()
+    normalized_title = scrapy.Field()
     price = scrapy.Field()
     size = scrapy.Field()
     brand = scrapy.Field()
